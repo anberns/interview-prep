@@ -1,7 +1,9 @@
 package main
 
 import (
-	"example.com/fizzbuzz"
+	"fmt"
+
+	"example.com/anagram"
 )
 
 func main() {
@@ -11,5 +13,6 @@ func main() {
 	// fmt.Println(palindrome.IsPalindromeInPlace("aid did"))
 	// fmt.Println(palindrome.IsPalindromeInPlace("a"))
 	//fmt.Println(maxchars.MaxChar("00011112334555"))
-	fizzbuzz.Fizzbuzz(31)
+	//fizzbuzz.Fizzbuzz(31)
+	fmt.Println(anagram.IsAnagram("Hi There", "Bye there"))
 }
