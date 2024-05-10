@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"example.com/anagram"
+	binarysearch "example.com/binary_search"
 )
 
 func main() {
@@ -14,5 +14,11 @@ func main() {
 	// fmt.Println(palindrome.IsPalindromeInPlace("a"))
 	//fmt.Println(maxchars.MaxChar("00011112334555"))
 	//fizzbuzz.Fizzbuzz(31)
-	fmt.Println(anagram.IsAnagram("Hi There", "Bye there"))
+	//fmt.Println(anagram.IsAnagram("Hi There", "Bye there"))
+	fmt.Println(binarysearch.BinarySearch([]int{1, 2, 4, 5, 7, 8, 10, 12}, 1))
+	fmt.Println(binarysearch.BinarySearch([]int{1, 2, 4, 5, 7, 8, 10, 12}, 12))
+	fmt.Println(binarysearch.BinarySearch([]int{1, 2, 4, 5, 7, 8, 10, 12}, 14))
+	fmt.Println(binarysearch.BinarySearch([]int{1, 2, 4, 5, 7, 8, 10, 12}, -1))
+	fmt.Println(binarysearch.BinarySearch([]int{1, 2, 4, 5, 7, 8, 10, 12}, 5))
+	fmt.Println(binarysearch.BinarySearch([]int{1, 2, 4, 5, 7, 8, 10, 12}, 7))
 }
