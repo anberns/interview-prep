@@ -15,7 +15,7 @@ func TestStack(t *testing.T) {
 	s.Push(2)
 	s.Push(3)
 
-	result, err := s.Peep()
+	result, err := s.Peek()
 	require.NoError(t, err)
 	require.Equal(t, 3, result)
 
@@ -23,7 +23,7 @@ func TestStack(t *testing.T) {
 	require.NoError(t, err)
 	require.Equal(t, 3, result)
 
-	result, err = s.Peep()
+	result, err = s.Peek()
 	require.NoError(t, err)
 	require.Equal(t, 2, result)
 
@@ -32,7 +32,7 @@ func TestStack(t *testing.T) {
 	_, err = s.Pop()
 	require.NoError(t, err)
 
-	_, err = s.Peep()
+	_, err = s.Peek()
 	require.Error(t, err)
 
 	_, err = s.Pop()

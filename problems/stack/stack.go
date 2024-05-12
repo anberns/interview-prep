@@ -16,7 +16,7 @@ func (s *Stack) Push(val int) {
 	s.Arr = append(s.Arr, val)
 }
 
-func (s *Stack) Peep() (int, error) {
+func (s *Stack) Peek() (int, error) {
 	if len(s.Arr) == 0 {
 		return 0, errors.New("no values in stack")
 	}
